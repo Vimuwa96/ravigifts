@@ -15,6 +15,26 @@
     />
     <link
       rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
@@ -109,63 +129,210 @@
             class="manu-icon-wrapper d-flex my-auto"
             style="flex-direction: column"
           >
-            <button class="menu">
+            <button
+              class="menu"
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <i class="bx bx-menu-alt-right bx-md"></i>
             </button>
           </div>
         </div>
       </div>
     </div>
+    <div class="container-fluid p-1" id="main-navbar">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item px-3 dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item px-3">
+                <a href="" class="nav-link">Our Stories</a>
+              </li>
+              <li class="nav-item px-3">
+                <a href="" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item px-3">
+                <a href="" class="nav-link">Contact us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="search-btn" type="submit">
+                <i class="bx bx-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
     <!-- Main Nav End -->
 
     <!-- Mobile Nav -->
     <div class="d-block d-sm-none">
-        <div class="container">
-          <div class="mobile-nav-wrapper p-2 d-flex">
-            <div class="mobile-nav-link text-center">
-              <a href="index.html">
-                <div class="mobile-nav-icon">
-                  <i class="bx bx-home-alt-2 bx-sm"></i>
-                </div>
-                <a href="index.html">Home</a>
-              </a>
-            </div>
-            <div class="mobile-nav-link text-center">
-              <a href="shop.html">
-                <div class="mobile-nav-icon">
-                  <i class="bx bx-store-alt bx-sm"></i>
-                </div>
-                <a href="shop.html">Shop</a>
-              </a>
-            </div>
-            <div class="mobile-nav-link text-center">
-              <a href="categories.html">
-                <div class="mobile-nav-icon">
-                  <i class="bx bx-category bx-sm"></i>
-                </div>
-                <a href="categories.html">Categories</a>
-              </a>
-            </div>
-            <div class="mobile-nav-link text-center">
-              <a href="cart.html">
-                <div class="mobile-nav-icon">
-                  <i class="bx bx-cart bx-sm"></i
-                  ><sup style="color: rgb(8, 8, 8) !important">1</sup>
-                </div>
-                <a href="cart.html">Cart</a>
-              </a>
-            </div>
+      <div class="container">
+        <div class="mobile-nav-wrapper p-2 d-flex">
+          <div class="mobile-nav-link text-center">
+            <a href="index.html">
+              <div class="mobile-nav-icon">
+                <i class="bx bx-home-alt-2 bx-sm"></i>
+              </div>
+              <a href="index.html">Home</a>
+            </a>
+          </div>
+          <div class="mobile-nav-link text-center">
+            <a href="shop.html">
+              <div class="mobile-nav-icon">
+                <i class="bx bx-store-alt bx-sm"></i>
+              </div>
+              <a href="shop.html">Shop</a>
+            </a>
+          </div>
+          <div class="mobile-nav-link text-center">
+            <a href="categories.html">
+              <div class="mobile-nav-icon">
+                <i class="bx bx-category bx-sm"></i>
+              </div>
+              <a href="categories.html">Categories</a>
+            </a>
+          </div>
+          <div class="mobile-nav-link text-center">
+            <a href="cart.html">
+              <div class="mobile-nav-icon">
+                <i class="bx bx-cart bx-sm"></i
+                ><sup style="color: rgb(8, 8, 8) !important">1</sup>
+              </div>
+              <a href="cart.html">Cart</a>
+            </a>
           </div>
         </div>
       </div>
+    </div>
     <!-- Mobile Nav End -->
 
-    <div class="hero vh-100">
-        <div class="container">
-            <p>Home Page</p>
+    <!-- Carousel -->
+
+    <div class="slider">
+      <div>
+        <img
+          src="images/Artboard 1.png"
+          alt="Image 1"
+          width="100%"
+          height="100%"
+        />
+        <div class="caption animate__animated"><p>Handmade Design</p> </div>
+        <div class="subcaption pt-4 animate__animated">
+          <p>By Rashmi ❤️</p> 
         </div>
+      </div>
+      <div>
+        <img
+          src="images/Artboard 2.png"
+          alt="Image 1"
+          width="100%"
+          height="100%"
+        />
+        <div class="caption animate__animated">Gift More. Spend Less</div>
+
+        <div class="subcaption pt-4 animate__animated">
+          Starting From 2500LKR
+        </div>
+      </div>
     </div>
+
     <!-- External Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/boostrap.js"></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: false,
+          fade: true,
+          speed: 500,
+         
+        });
+
+        // Add initial animation class to the first caption and subcaption with delay
+        $(".slider").on("init", function (event, slick) {
+          setTimeout(function () {
+            $(".slick-current .caption")
+              .css("visibility", "visible")
+              .addClass("animate__backInUp");
+          }, 500); // 500ms delay
+
+          setTimeout(function () {
+            $(".slick-current .subcaption")
+              .css("visibility", "visible")
+              .addClass("animate__fadeInUp");
+          }, 1000); // 1000ms delay for subcaption
+        });
+
+        // Change animation class on afterChange event with delay
+        $(".slider").on("afterChange", function (event, slick, currentSlide) {
+          $(".caption")
+            .css("visibility", "hidden")
+            .removeClass("animate__backInUp");
+          $(".subcaption")
+            .css("visibility", "hidden")
+            .removeClass("animate__fadeInUp");
+
+          setTimeout(function () {
+            $(".slick-current .caption")
+              .css("visibility", "visible")
+              .addClass("animate__backInUp");
+          }, 500); // 500ms delay
+
+          setTimeout(function () {
+            $(".slick-current .subcaption")
+              .css("visibility", "visible")
+              .addClass("animate__fadeInUp");
+          }, 1000); // 1000ms delay for subcaption
+        });
+
+        // Trigger the init event to add the animation class to the first caption
+        $(".slider").slick("slickGoTo", 0, true);
+      });
+    </script>
   </body>
 </html>

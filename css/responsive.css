@@ -2,6 +2,18 @@
   .upper-nav {
     display: none;
   }
+
+  .caption {
+    font-size: 25px;
+    font-weight: 500;
+ /* Initially hide the captions */
+}
+
+.subcaption {
+    font-size: 10px;
+    font-weight: 400;
+ /* Initially hide the captions */
+}
 }
 
 
