@@ -14,6 +14,11 @@
     font-weight: 400;
  /* Initially hide the captions */
 }
+
+.service-card-wrapper{
+  border: 1px solid rgb(255, 247, 247);
+  border-radius: 15px;
+}
 }
 
 

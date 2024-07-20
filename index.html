@@ -69,7 +69,7 @@
     <div class="main-nav-wrapper p-4">
       <div class="container" id="main-nav-wrapper">
         <div class="logo-section d-flex my-auto">
-          <img src="images/logo.png" alt="logo" width="150px" />
+          <img src="images/logo.png" alt="logo" width="200px" />
         </div>
         <div class="delivery d-none d-sm-block d-sm-none d-md-block">
           <div class="delivery-card d-flex my-auto">
@@ -234,7 +234,7 @@
             <a href="cart.html">
               <div class="mobile-nav-icon">
                 <i class="bx bx-cart bx-sm"></i
-                ><sup style="color: rgb(8, 8, 8) !important">1</sup>
+                ><sup style="color: rgb(250, 246, 246) !important">1</sup>
               </div>
               <a href="cart.html">Cart</a>
             </a>
@@ -245,8 +245,7 @@
     <!-- Mobile Nav End -->
 
     <!-- Carousel -->
-
-    <div class="slider">
+    <div class="slider pb-5">
       <div>
         <img
           src="images/Artboard 1.png"
@@ -254,9 +253,9 @@
           width="100%"
           height="100%"
         />
-        <div class="caption animate__animated"><p>Handmade Design</p> </div>
+        <div class="caption animate__animated"><p>Handmade Design</p></div>
         <div class="subcaption pt-4 animate__animated">
-          <p>By Rashmi ❤️</p> 
+          <p>By ❤️</p>
         </div>
       </div>
       <div>
@@ -273,7 +272,86 @@
         </div>
       </div>
     </div>
+    <!-- Carousel End -->
 
+    <!-- Services  -->
+    <div class="services-wrapper">
+      <div class="container pb-5">
+        <h2><span style="color: rgb(247, 168, 181)"> Our</span> Services</h2>
+        <div class="row pt-3">
+          <div class="col-md-3 col-6 g-2" style="position: relative">
+            <div class="service-card-wrapper p-3 text-center">
+              <div class="service-card-icon-01">
+                <img src="images/icons/icons8-gift-100.png" alt="" />
+              </div>
+              <div class="service-contect pt-3">
+                <div class="service-header">
+                  <h6>Delivering quality gifts</h6>
+                  <p>information on its origins</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
+            ></div>
+          </div>
+          <div class="col-md-3 col-6 g-2" style="position: relative">
+            <div class="service-card-wrapper p-3 text-center">
+              <div class="service-card-icon-02">
+                <img src="images/icons/icons8-star-96.png" alt="" />
+              </div>
+              <div class="service-contect pt-3">
+                <div class="service-header">
+                  <h6>Gifts for all occasions</h6>
+                  <p>Variants and technical</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
+            ></div>
+          </div>
+          <div class="col-md-3 col-6 g-2" style="position: relative">
+            <div class="service-card-wrapper p-3 text-center">
+              <div class="service-card-icon-03">
+                <img src="images/icons/icons8-customer-service-80.png" alt="" />
+              </div>
+              <div class="service-contect pt-3">
+                <div class="service-header">
+                  <h6>Great customer service</h6>
+                  <p>information on its origins</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
+            ></div>
+          </div>
+          <div class="col-md-3 col-6 g-2" style="position: relative">
+            <div class="service-card-wrapper p-3 text-center">
+              <div class="service-card-icon-04">
+                <img src="images/icons/icons8-customize-100.png" alt="" />
+              </div>
+              <div class="service-contect pt-3">
+                <div class="service-header">
+                  <h6>Delivering quality gifts</h6>
+                  <p>information on its origins</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category -->
+    <div class="category-warapper vh-100"></div>
+
+    <!-- Services End -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bxs-chevrons-up'></i></button>
     <!-- External Js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/boostrap.js"></script>
@@ -290,7 +368,6 @@
           dots: false,
           fade: true,
           speed: 500,
-         
         });
 
         // Add initial animation class to the first caption and subcaption with delay
@@ -330,9 +407,49 @@
           }, 1000); // 1000ms delay for subcaption
         });
 
-        // Trigger the init event to add the animation class to the first caption
+        // Initialize the slick slider
         $(".slider").slick("slickGoTo", 0, true);
+
+        // Manually trigger the animation for the first slide
+        setTimeout(function () {
+          $(".slick-current .caption")
+            .css("visibility", "visible")
+            .addClass("animate__backInUp");
+        }, 500); // 500ms delay
+
+        setTimeout(function () {
+          $(".slick-current .subcaption")
+            .css("visibility", "visible")
+            .addClass("animate__fadeInUp");
+        }, 1000); // 1000ms delay for subcaption
       });
+    </script>
+
+    <script>
+      // Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
     </script>
   </body>
 </html>

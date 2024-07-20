@@ -1,82 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slick Slider with Animate.css</title>
-    <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Slick JS -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    
-    <style>
-        .slider {
-            width: 80%;
-            margin: auto;
-        }
-        .caption {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            color: #fff;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .slick-slide {
-            position: relative;
-        }
-    </style>
-</head>
-<body>
-  <div class="slider">
-    <div>
-        <img src="http://www.marchettidesign.net/demo/optimized-bootstrap/code.jpg" alt="Image 1" width="100%">
-        <div class="caption animate__animated">Caption for Image 1</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiftStore.lk</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/boostrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Upper Section -->
+    <div class="upper-section-wrapper p-3">
+      <div class="container" id="upper-section-wrapper">
+        <div class="location-wrapper">
+          <a href=""><i class="bx bxs-map"></i> Pannipitiya, Sri Lanka</a>
+        </div>
+        <div class="d-none d-sm-block">
+          <div class="user-section-wrapper">
+            <div class="user-section-link px-3">
+              <a href=""><strong>Sign In / Register</strong> </a>
+            </div>
+            <div class="user-section-link px-3">
+              <a href="">About Us</a>
+            </div>
+            <div class="user-section-link px-3">
+              <a href="">Track Orders</a>
+            </div>
+            <div class="user-section-link px-3">
+              <a href="">FAQ</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-        <img src="http://www.marchettidesign.net/demo/optimized-bootstrap/conference.jpg" alt="Image 2">
-        <div class="caption animate__animated">Caption for Image 2</div>
+    <!-- Upper Section End -->
+
+    <!-- Main Nav -->
+    <div class="main-nav-wrapper p-4">
+      <div class="container" id="main-nav-wrapper">
+        <div class="logo-section d-flex my-auto">
+          <img src="images/logo.png" alt="logo" width="150px" />
+        </div>
+        <div class="delivery d-none d-sm-block d-sm-none d-md-block">
+          <div class="delivery-card d-flex my-auto">
+            <div class="delivery-img d-flex my-auto">
+              <i class="bi bi-truck fs-1 my-auto"></i>
+            </div>
+            <div
+              class="delivery-content d-flex my-auto px-3"
+              style="line-height: 20px; flex-direction: column"
+            >
+              <p class="my-auto" style="font-size: small">
+                Free standard shipping
+              </p>
+              <h6 class="my-auto">on all orders over $99</h6>
+            </div>
+            <div class="vr"></div>
+          </div>
+        </div>
+
+        <div class="delivery d-none d-sm-block">
+          <div class="delivery-card d-flex my-auto">
+            <div class="delivery-img d-flex my-auto">
+              <i class="bi bi-headset fs-1 my-auto"></i>
+            </div>
+            <div
+              class="delivery-content d-flex my-auto px-3"
+              style="line-height: 20px; flex-direction: column"
+            >
+              <p class="my-auto" style="font-size: small">
+                support@ravigifts.lk
+              </p>
+              <h6 class="my-auto">+94 76 490 6767</h6>
+            </div>
+            <div class="vr"></div>
+          </div>
+        </div>
+
+        <div class="delivery d-none d-sm-block">
+          <div class="delivery-card d-flex my-auto">
+            <div class="delivery-img d-flex my-auto">
+              <i class="bi bi-cart fs-1 my-auto"></i>
+            </div>
+            <div
+              class="delivery-content d-flex my-auto px-3"
+              style="line-height: 20px; flex-direction: column"
+            >
+              <p class="my-auto" style="color: rgb(233, 140, 156)">
+                Cart: 0 items
+              </p>
+              <h6 class="my-auto">0 LKR</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-block d-sm-none">
+          <div
+            class="manu-icon-wrapper d-flex my-auto"
+            style="flex-direction: column"
+          >
+            <button class="menu">
+              <i class="bx bx-menu-alt-right bx-md"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-        <img src="http://www.marchettidesign.net/demo/optimized-bootstrap/campus.jpg" alt="Image 3">
-        <div class="caption animate__animated">Caption for Image 3</div>
+    <!-- Main Nav End -->
+
+    <!-- Mobile Nav -->
+    <div class="d-block d-sm-none">
+      <div class="container">
+        <div class="mobile-nav-wrapper p-2 d-flex">
+          <div class="mobile-nav-link text-center">
+            <a href="index.html">
+              <div class="mobile-nav-icon">
+                <i class="bx bx-home-alt-2 bx-sm"></i>
+              </div>
+              <a href="index.html">Home</a>
+            </a>
+          </div>
+          <div class="mobile-nav-link text-center">
+            <a href="shop.html">
+              <div class="mobile-nav-icon">
+                <i class="bx bx-store-alt bx-sm"></i>
+              </div>
+              <a href="shop.html">Shop</a>
+            </a>
+          </div>
+          <div class="mobile-nav-link text-center">
+            <a href="categories.html">
+              <div class="mobile-nav-icon">
+                <i class="bx bx-category bx-sm"></i>
+              </div>
+              <a href="categories.html">Categories</a>
+            </a>
+          </div>
+          <div class="mobile-nav-link text-center">
+            <a href="cart.html">
+              <div class="mobile-nav-icon">
+                <i class="bx bx-cart bx-sm"></i
+                ><sup style="color: rgb(8, 8, 8) !important">1</sup>
+              </div>
+              <a href="cart.html">Cart</a>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+    <!-- Mobile Nav End -->
 
-<script>
-  $(document).ready(function(){
-      $('.slider').slick({
-          autoplay: true,
-          autoplaySpeed: 3000,
-          dots: true,
-          fade: true,
-          speed: 500,
-          arrows: false
-      });
-
-      // Add initial animation class to the first caption
-      $('.slider').on('init', function(event, slick){
-          $('.slick-current .caption').addClass('animate__fadeIn');
-      });
-
-      // Change animation class on afterChange event
-      $('.slider').on('afterChange', function(event, slick, currentSlide){
-          $('.caption').removeClass('animate__fadeIn');
-          $('.slick-current .caption').addClass('animate__fadeIn');
-      });
-
-      // Trigger the init event to add the animation class to the first caption
-      $('.slider').slick('slickGoTo', 0, true);
-  });
-  </script>
-</body>
+    <div class="hero vh-100">
+        <div class="container">
+            <p>Shop Page</p>
+        </div>
+    </div>
+    <!-- External Js -->
+    <script src="js/boostrap.js"></script>
+  </body>
 </html>
